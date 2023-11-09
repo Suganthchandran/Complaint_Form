@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        body{
+            background-image: linear-gradient(to bottom, grey , #0f0b27);
+            }
+
+        h1{
+                color:black;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-top: 60px;
+            }
+
+        .name   
+        {
+            margin-top: 5px;
+                font-family: Arial;
+                width: 426px;
+                height: 55px;
+                display: inline-block;
+                border-width: 1px;
+                border-color: gray;
+                border-radius: 8px;
+                font-size: 18px;
+                padding-left: 20px;
+                margin-bottom: 15px;
+        }
+
+        .roll
+        {
+            margin-top: 5px;
+                font-family: Arial;
+                width: 426px;
+                height: 55px;
+                display: inline-block;
+                border-width: 1px;
+                border-color: gray;
+                border-radius: 8px;
+                font-size: 18px;
+                padding-left: 20px;
+                margin-bottom: 15px;
+        }
+
+        .input
+        {
+            color:white;
+            font-weight: bold;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-left: 345px;
+                margin-top: 50px;
+        }
+
+        .members
+        {
+            margin-top: 10px;
+            width: 230px;
+                height: 40px;
+                font-size: large;
+                margin-bottom: 15px;
+        }
+
+        .check
+        {
+            color:whitesmoke;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 5px;
+            margin-bottom: 7px;
+        }
+
+        .area
+        {
+            font-size: large;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        .checkbox
+        {
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        button
+        {
+            font-family: Arial;
+                margin-top: 8px;
+                width: 140px;
+                height: 50px;
+                background-color: rgb(3, 125, 255);
+                color: white;
+                font-weight: bold;
+                border: none;
+                font-size: 22px;
+                border-radius: 8px;
+        }
+
+        button:hover{
+                opacity:0.5;
+            }
+
+        button:active{
+                background-color: white;
+                color: rgb(3, 125, 255);
+            }
+
+            
+
+    </style>
+</head>
+<body>      
+    <center><h1>Complaint Form</h1></center>
+    <form method="post" action="https://script.google.com/macros/s/AKfycbwUtRkiokSLh1Xd1KOeu1KkVIntzYo482JZo_pnTkka5efyX6Yk82THFmxK69ZnpzGs0g/exec">
+        <label class="input">Name:</label><br>
+        <center><input type="text" placeholder="Enter the Name" name="Name" required class="name"><br></center>
+        <label class="input">Roll No:</label><br>
+        <center><input type="text" placeholder="Roll No" name="Roll No" required class="roll"><br></center>
+        <label class="input">Accused Person:</label><br>
+        <center><select class="members" name="Accuse">
+            <option selected></option>
+            <option>Vishwa</option>
+            <option>Vijayakrishna</option>
+            <option>Mithun Bahavath</option>
+            <option>Suganth</option>
+            <option>Aarumugan</option>
+            <option>Thamil Vasanth</option>
+            <option>Sri Manoj</option>
+            <option>Haresh</option>
+            <option>Sooryapandian</option>
+            <option>Kamalesh</option>
+            <option>Seshanand</option>
+            <option>Vigneshwaran</option>
+            <option>Jebin jose</option>
+            <option>Vishal</option>
+        </select>
+    </center>
+        <label class="input">What Type of Complain?</label><br>
+      <center><div class="checkbox"> 
+        <input type="radio" name="Type" value="Sexually">
+        <label class="check">Sexually</label>
+        <input type="radio" name="Type" value="Robbery" >
+        <label class="check">Robbery</label>
+        <input type="radio" name="Type" value="ragging" >
+        <label class="check">Ragging</label>
+        <input type="radio" name="Type" value="Disturbing" >
+        <label class="check">Disturbing</label></div></center> <br>
+        <label class="input">Complain:</label><br>
+        <center><textarea class="area" rows="10" cols="40" name="Complaint"></textarea></center>
+        <center><button onclick="fun()">Submit</button></center>
+    </form>
+<script>
+  function fun(){
+    form.reset();
+  }
+</script>
+</body>
+</html>
